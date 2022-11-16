@@ -38,8 +38,12 @@ app.get("/", async (request, response) => {
 });
 
 app.post("/addTodo", (request, response) => {
+  const today = new Date();
+  const date =
+    today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  console.log(date);
   db.collection("todos")
-    .insertOne({ thing: request.body.todoItem, completed: false })
+    .insertOne({ thing: request.body.todoItem, date: date, completed: false })
     .then((result) => {
       console.log("Todo Added");
       response.redirect("/");
