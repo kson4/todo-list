@@ -1,7 +1,22 @@
-h1{
-    color: red;
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
 }
-.completed{
-    color: gray;
-    text-decoration: line-through;
+
+h1 {
+  color: red;
+}
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+.middle {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid red;
 }

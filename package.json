@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "cors": "^2.8.5",
     "dotenv": "^8.6.0",
     "ejs": "^3.1.6",
